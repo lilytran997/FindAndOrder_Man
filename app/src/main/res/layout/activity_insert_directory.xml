@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b5"
+    tools:context=".InsertDirectory">
+
+    <TextView
+        android:id="@+id/direcInBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tiltle_haft_round_bottom"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="  Nhập địa chỉ của bạn"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNhapDiaChi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:hint="VD: 5 Trần Phú"
+        android:inputType="text"
+        android:textColor="#fff"
+        android:textColorHint="#bfffffff"
+        app:layout_constraintEnd_toStartOf="@+id/btnChonQuan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/direcInBill" />
+
+    <Button
+        android:id="@+id/btnNhanDiaChi"
+        android:layout_width="100dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_dark_blue"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="OK"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/btnChonQuan"
+        app:layout_constraintTop_toBottomOf="@+id/btnChonQuan" />
+
+    <Button
+        android:id="@+id/btnAddRest"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_dark_blue"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Thêm nhà hàng"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/btnNhanDiaChi"
+        app:layout_constraintTop_toBottomOf="@+id/btnNhanDiaChi" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="41dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/find_location" />
+
+    <ImageButton
+        android:id="@+id/btn_store"
+        android:layout_width="91dp"
+        android:layout_height="44dp"
+        android:background="@drawable/btn_haft_ground_under_2"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_dir"
+        app:srcCompat="@drawable/shop_white" />
+
+    <ImageButton
+        android:id="@+id/btn_food_menu"
+        android:layout_width="85dp"
+        android:layout_height="43dp"
+        android:background="@drawable/btn_haft_ground_under_2"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_store"
+        app:srcCompat="@drawable/cutlery_white" />
+
+    <ImageButton
+        android:id="@+id/btn_bill"
+        android:layout_width="88dp"
+        android:layout_height="43dp"
+        android:background="@drawable/btn_haft_ground_under_2"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_food_menu"
+        app:srcCompat="@drawable/shopping_cart_white" />
+
+    <ImageButton
+        android:id="@+id/btn_dir"
+        android:layout_width="95dp"
+        android:layout_height="64dp"
+        android:background="@drawable/btn_haft_round_under"
+        android:cropToPadding="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:padding="7dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/location" />
+
+    <Button
+        android:id="@+id/btnChonQuan"
+        android:layout_width="102dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_dark_blue"
+        android:text="Quận ▼"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/direcInBill" />
+
+
+</android.support.constraint.ConstraintLayout>

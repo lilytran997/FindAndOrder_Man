@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgViewFood"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="15dp"
+        android:background="#00000000"
+        android:padding="5dp"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/txtViewTenMon"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/imgViewFood"
+        android:layout_toRightOf="@id/imgViewHinhNH"
+        android:background="@drawable/btn_sakura"
+        android:paddingStart="7dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="7dp"
+        android:paddingBottom="5dp"
+        android:text="Ten mon"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtViewTenMon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/txtViewTenMon"
+        android:layout_toRightOf="@id/imgViewHinhNH"
+        android:background="@drawable/btn_sakura"
+        android:paddingStart="7dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="7dp"
+        android:paddingBottom="5dp"
+        android:text="Giá"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageSub"
+        style="@android:style/Widget.ImageButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/txtViewTenMon"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@+id/imgViewFood"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/minus_sakura" />
+
+    <ImageButton
+        android:id="@+id/imageAdd"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/txtViewTenMon"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@+id/SoLuongFood"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/plus_sakura" />
+
+    <EditText
+        android:id="@+id/SoLuongFood"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewTenMon"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/imageSub"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#ff5050"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewGia"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewTenMon2"
+        android:layout_alignBottom="@+id/txtViewTenNH"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toEndOf="@+id/imageAdd"
+        android:text="Gia"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+</RelativeLayout>

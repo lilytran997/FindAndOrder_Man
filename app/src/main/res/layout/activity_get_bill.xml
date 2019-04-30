@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b6"
+    tools:context=".GetBill">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/name1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:srcCompat="@drawable/name1" />
+
+    <TextView
+        android:id="@+id/nameInBill"
+        android:layout_width="246dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:text="Tên"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="300dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btn_sakura"
+        android:text="ĐƠN HÀNG"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/location" />
+
+    <TextView
+        android:id="@+id/direcInBill"
+        android:layout_width="246dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:text="Địa điểm giao hàng"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/nameInBill" />
+
+    <TextView
+        android:id="@+id/addressInBill"
+        android:layout_width="183dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_haft_round_under"
+        android:paddingTop="5dp"
+        android:text="Tên cửa hàng"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ListView
+        android:id="@+id/lvBill"
+        android:layout_width="380dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDatHang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressInBill"></ListView>
+
+    <Button
+        android:id="@+id/btnDatHang"
+        android:layout_width="97dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/btn_sakura2"
+        android:text="ĐẶT HÀNG"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_store"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/btn_sakura2"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_dir"
+        app:srcCompat="@drawable/shop_white" />
+
+    <ImageButton
+        android:id="@+id/btn_food_menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/btn_sakura2"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_store"
+        app:srcCompat="@drawable/cutlery_white" />
+
+    <ImageButton
+        android:id="@+id/btn_bill"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/btn_sakura2"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_food_menu"
+        app:srcCompat="@drawable/shopping_cart_white" />
+
+    <ImageButton
+        android:id="@+id/btn_dir"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/btn_sakura2"
+        android:cropToPadding="false"
+        android:padding="7dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_restaurant"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/location_white" />
+
+    <TextView
+        android:id="@+id/SumAll"
+        android:layout_width="233dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn_sakura"
+        android:paddingLeft="80dp"
+        android:paddingRight="20dp"
+        android:text="$100"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_store"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="105dp"
+        android:layout_height="35dp"
+        android:background="@drawable/btn_dark_blue2"
+        android:text="Tổng cộng:"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/SumAll"
+        app:layout_constraintStart_toStartOf="@+id/SumAll" />
+
+
+</android.support.constraint.ConstraintLayout>

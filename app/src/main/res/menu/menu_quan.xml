@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Quận 1"
+        android:id="@+id/menuQ1"/>
+    <item
+        android:title="Quận 2"
+        android:id="@+id/menuQ2"/>
+    <item
+        android:title="Quận 3"
+        android:id="@+id/menuQ3"/>
+    <item
+        android:title="Quận 4"
+        android:id="@+id/menuQ4"/>
+    <item
+        android:title="Quận 5"
+        android:id="@+id/menuQ5"/>
+    <item
+        android:title="Quận 6"
+        android:id="@+id/menuQ6"/>
+    <item
+        android:title="Quận 7"
+        android:id="@+id/menuQ7"/>
+    <item
+        android:title="Quận 8"
+        android:id="@+id/menuQ8"/>
+    <item
+        android:title="Quận 9"
+        android:id="@+id/menuQ9"/>
+    <item
+        android:title="Quận 10"
+        android:id="@+id/menuQ10"/>
+    <item
+        android:title="Quận 11"
+        android:id="@+id/menuQ11"/>
+    <item
+        android:title="Quận 12"
+        android:id="@+id/menuQ12"/>
+    <item
+        android:title="Quận Thủ Đức"
+        android:id="@+id/menuQTD"/>
+    <item
+        android:title="Quận Gò Vấp"
+        android:id="@+id/menuQGV"/>
+    <item
+        android:title="Quận Bình Thạnh"
+        android:id="@+id/menuQBT"/>
+    <item
+        android:title="Quận Tân Bình"
+        android:id="@+id/menuTB"/>
+    <item
+        android:title="Quận Tân Phú"
+        android:id="@+id/menuQTP"/>
+    <item
+        android:title="Quận Phú Nhuận"
+        android:id="@+id/menuQPN"/>
+    <item
+        android:title="Quận Bình Tân"
+        android:id="@+id/menuQBt"/>
+
+</menu>

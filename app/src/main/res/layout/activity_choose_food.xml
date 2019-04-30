@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b8"
+    tools:context=".ChooseFood">
+
+    <TextView
+        android:id="@+id/direcInBill"
+        android:layout_width="260dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/btn_sakura"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="YUMMY:"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_store"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/btn_sakura"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_dir"
+        app:srcCompat="@drawable/shop_white" />
+
+    <ImageButton
+        android:id="@+id/btn_food_menu"
+        android:layout_width="85dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/btn_sakura2"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_store"
+        app:srcCompat="@drawable/cutlery_black" />
+
+    <ImageButton
+        android:id="@+id/btn_bill"
+        android:layout_width="72dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/btn_sakura"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/btn_food_menu"
+        app:srcCompat="@drawable/shopping_cart_white" />
+
+    <ImageButton
+        android:id="@+id/btn_dir"
+        android:layout_width="75dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/btn_sakura"
+        android:cropToPadding="false"
+        android:padding="7dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_restaurant"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/location_white" />
+
+
+    <ListView
+        android:id="@+id/list_food"
+        android:layout_width="395dp"
+        android:layout_height="425dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_food_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/direcInBill" />
+
+    <Button
+        android:id="@+id/dathang"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="95dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/btn_sakura2"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Đặt hàng"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/direcInBill"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
